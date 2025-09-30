@@ -1,41 +1,63 @@
 import React from "react";
+import { 
+  FaEnvelopeSquare, 
+  FaGithubSquare, 
+  FaLinkedin, 
+  FaFacebookSquare, 
+  FaTwitterSquare 
+} from "react-icons/fa";
+
 
 const Navbar = () => {
   return (
     <header className="w-full bg-white">
       <nav className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          {/*Name*/}
-          <div className="flex flex-col text-center md:text-left">
-            <h1 className="text-3xl font-bold text-gray-900">H M Shadid Reza Chowdhury</h1>
-            <p className="text-sm text-gray-600">Full Stack Software Engineer</p>
+        
+         {/* Contact Icons */}
+          <div className="flex justify-center md:justify-start gap-4 text-2xl">
+            <a href="mailto:shadid@example.com" target="_blank" rel="noopener noreferrer">
+              <FaEnvelopeSquare />
+            </a>
+            <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+              <FaGithubSquare />
+            </a>
+            <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin />
+            </a>
+            <a href="https://www.facebook.com/username" target="_blank" rel="noopener noreferrer">
+              <FaFacebookSquare />
+            </a>
+            <a href="https://twitter.com/username" target="_blank" rel="noopener noreferrer">
+              <FaTwitterSquare />
+            </a>
           </div>
 
           {/* Navigation Links */}
           <ul className="flex flex-wrap justify-center md:justify-end gap-6 text-lg font-medium text-gray-700">
             <li>
               <a href="#about" className="hover:underline">
-                About Me
+                about
               </a>
             </li>
             <li>
               <a href="#education" className="hover:underline">
-                Education
+                education
               </a>
             </li>
             <li>
               <a href="#experience" className="hover:underline">
-                Experience
+                experience
               </a>
             </li>
             <li>
               <a href="#achievements" className="hover:underline">
-                Achievements
+                achievements
               </a>
             </li>
             <li>
               <a href="#cv" className="hover:underline">
-                CV
+                curriculum vitae
               </a>
             </li>
           </ul>

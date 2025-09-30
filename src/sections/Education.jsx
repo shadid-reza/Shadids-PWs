@@ -26,7 +26,7 @@ const Education = () => {
   return (
     <section id="education" className="max-w-6xl mx-auto px-4 py-8">
       <div className="bg-gray-100 p-4 rounded-md">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">Education</h2>
+        <h4 className="text-3xl font-bold text-gray-900 mb-6">Education</h4>
 
         <div className="space-y-6">
           {educationList.map((edu, index) => (

@@ -31,7 +31,7 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="max-w-6xl mx-auto px-4 py-8">
-      <div className="bg-gray-100 p-4 rounded-md">
+      <div className=" p-4 rounded-md">
         <h2 className="text-3xl font-bold text-gray-900 mb-6">Projects</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

@@ -20,9 +20,9 @@ const AwardsAchievements = () => {
   ];
 
   return (
-    <section className="p-6 bg-white rounded-2xl shadow-sm">
+    <section id="achievements" className="max-w-6xl mx-auto px-4 py-8">
       <h2 className="text-2xl font-semibold mb-4 border-b pb-2">
-        🏆 Awards & Achievements
+        Awards & Achievements
       </h2>
       <ul className="space-y-3">
         {achievements.map((item, index) => (
