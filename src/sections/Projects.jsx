@@ -7,7 +7,7 @@ const projects = [
     title: "AUTOHUB by IUT CARBON",
     importance: 1,
     description: "A centralized e-commerce platform connecting car owners with workshops for seamless auto repair and service management.",
-    image: "src/assets/projects/autohub-project.png",
+    image: "shadids-pws/src/assets/projects/autohub-project.png",
     url: "https://github.com/shadid-reza/AutoHub_IUT-CARBON",
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     title: "Portfolio Website",
     importance: 2,
     description: "A modern responsive portfolio built with React & Tailwind CSS.",
-    image: "src/assets/projects/portfolio.png",
+    image: "shadids-pws/src/assets/projects/portfolio.png",
     url: "https://github.com/yourusername/portfolio-website",
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     title: "Data Dashboard",
     importance: 3,
     description: "An interactive analytics dashboard with real-time data.",
-    image: "src/assets/projects/dashboard.png",
+    image: "shadids-pws/src/assets/projects/dashboard.png",
     url: "https://github.com/yourusername/data-dashboard",
   },
 ];
