@@ -3,7 +3,7 @@ import React from "react";
 const AwardsAchievements = () => {
   const achievements = [
     {
-      title: "Best Developer Award",
+      title: "Best Developer Award 123",
       summary:
         "Recognized for outstanding contribution to the development of internal tools and automation systems.",
     },
