@@ -1,13 +1,14 @@
 import React from "react";
 
-// Example projects data (you can fetch or import later)
+import autohubImage from "../assets/projects/autohub-project.png";
+
 const projects = [
   {
     id: 1,
     title: "AUTOHUB by IUT CARBON",
     importance: 1,
     description: "A centralized e-commerce platform connecting car owners with workshops for seamless auto repair and service management.",
-    image: "shadids-pws/src/assets/projects/autohub-project.png",
+    image: autohubImage,
     url: "https://github.com/shadid-reza/AutoHub_IUT-CARBON",
   },
   {
