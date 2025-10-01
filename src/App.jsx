@@ -7,6 +7,8 @@ import Projects from './sections/Projects'
 import Experience from './sections/Experience'
 import Achievements from './sections/Achievements'
 import ScrollToTopButton from './components/ScrollToTop'
+import Footer from './components/Footer'
+import News from "./sections/News";
 
 function App() {
   return (
@@ -14,12 +16,14 @@ function App() {
       <Navbar />
       <main className="space-y-1">
         <AboutMe />
+        <News />
         <Experience />
         <Education />
         <Achievements />
         <Projects />
       </main>
 
+      <Footer />
       <ScrollToTopButton />
     </div>
   )

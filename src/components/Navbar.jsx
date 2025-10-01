@@ -16,20 +16,17 @@ const Navbar = () => {
         
          {/* Contact Icons */}
           <div className="flex justify-center md:justify-start gap-4 text-2xl">
-            <a href="mailto:shadid@example.com" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:hmshadid25@gmail.com" target="_blank" rel="noopener noreferrer">
               <FaEnvelopeSquare />
             </a>
-            <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/shadid-reza" target="_blank" rel="noopener noreferrer">
               <FaGithubSquare />
             </a>
-            <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/shadid-reza/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href="https://www.facebook.com/username" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/h.m.shadid" target="_blank" rel="noopener noreferrer">
               <FaFacebookSquare />
-            </a>
-            <a href="https://twitter.com/username" target="_blank" rel="noopener noreferrer">
-              <FaTwitterSquare />
             </a>
           </div>
 

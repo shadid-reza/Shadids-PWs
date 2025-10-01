@@ -3,51 +3,48 @@ import React from "react";
 const Education = () => {
   const educationList = [
     {
-      degree: "Ph.D. in Computer Science",
-      school: "Brown University",
-      year: "2019",
-      description:
-        "Focused on cybersecurity and privacy, with research in scalable encrypted systems and AI/ML security intersections.",
+      year: "2020 - 2024",
+      degree: "B.Sc. in Computer Science and Engineering (CSE)",
+      school: "Islamic University of Technology (IUT), Gazipur, Bangladesh",
     },
     {
-      degree: "M.Sc. in Computer Science",
-      school: "University of Crete",
-      year: "2014",
-      description: "Specialized in software engineering and cryptography.",
-    },
-    {
-      degree: "B.Sc. in Computer Science",
-      school: "University of Crete",
-      year: "2012",
-      description: "Studied core computer science topics and algorithms.",
+      year: "2017 - 2019",
+      degree: "Higher Secondary School Certificate,",
+      school: "Rajuk Uttara Model College, Dhaka, Bangladesh",
     },
   ];
 
   return (
     <section id="education" className="max-w-6xl mx-auto px-4 py-8">
-      <div className="bg-gray-100 p-4 rounded-md">
-        <h4 className="text-3xl font-bold text-gray-900 mb-6">Education</h4>
+      <div className="card bg-white shadow-md rounded-md p-6">
+        <h3 className="text-2xl font-bold text-gray-900 mb-6">Education</h3>
 
-        <div className="space-y-6">
+        <ul className="space-y-6">
           {educationList.map((edu, index) => (
-            <div
+            <li
               key={index}
-              className="md:flex md:items-start md:gap-6"
+              className="list-group-item border-b last:border-none pb-4"
             >
-              {/* Left: Degree and Year */}
-              <div className="md:w-1/3 flex flex-col md:flex-col mb-2 md:mb-0">
-                <h3 className="text-xl font-semibold text-blue-600">{edu.degree}</h3>
-                <p className="text-gray-700">{edu.school}</p>
-                <p className="text-gray-500">{edu.year}</p>
-              </div>
+              <div className="flex flex-col md:flex-row gap-4">
+                {/* Year badge */}
+                <div className="md:w-auto flex-shrink-0">
+                  <span className="inline-block text-center bg-green-200 text-green-900 font-semibold text-sm py-1 px-2 rounded uppercase w-[100px]">
+                    {edu.year}
+                  </span>
+                </div>
 
-              {/* Right: Description */}
-              <div className="md:flex-1 text-gray-700">
-                <p>{edu.description}</p>
+                {/* Degree & Details */}
+                <div className="flex-1">
+                  <h6 className="font-semibold text-lg text-gray-800">
+                    {edu.degree}
+                  </h6>
+                  <p className="text-gray-600 italic mb-2">{edu.school}</p>
+
+                </div>
               </div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

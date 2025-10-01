@@ -1,7 +1,6 @@
 import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
 
-// Example experience data
 const experiences = [
   {
     id: 1,
@@ -45,39 +44,31 @@ const formatDate = (start, end) => {
 };
 
 const Experience = () => {
-  // Sort by startDate descending
-  const sortedExperiences = [...experiences].sort(
-    (a, b) => new Date(b.startDate) - new Date(a.startDate)
-  );
-
   return (
     <section id="experience" className="max-w-6xl mx-auto px-4 py-8">
-      <div className="bg-gray-100 p-4 rounded-md">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">Experience</h2>
+      <div className="card bg-white shadow-md rounded-md p-6">
+        <h3 className="text-2xl font-bold text-gray-900 mb-6">Experience</h3>
 
-        <ul className="divide-y divide-gray-300">
-          {sortedExperiences.map((exp) => (
-            <li key={exp.id} className="py-6">
-              <div className="md:flex md:items-start md:gap-6">
+        <ul className="space-y-6">
+          {experiences.map((exp) => (
+            <li key={exp.id} className="list-group-item border-b last:border-none pb-4">
+              <div className="flex flex-col md:flex-row gap-4">
                 {/* Left Column: Date + Location */}
-                <div className="md:w-1/4 text-center mb-4 md:mb-0">
-                  {/* Date Badge */}
-                  <div className="inline-block bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded uppercase">
+                <div className="md:w-auto flex-shrink-0">
+                  <span className="inline-block text-center bg-blue-200 text-blue-900 font-semibold text-sm py-1 px-3 rounded uppercase w-[120px]">
                     {formatDate(exp.startDate, exp.endDate)}
-                  </div>
-
-                  {/* Location */}
+                  </span>
                   {exp.location && (
-                    <p className="text-gray-600 mt-2 flex justify-center items-center gap-1 text-sm">
+                    <p className="text-gray-600 mt-2 flex items-center gap-1 text-sm">
                       <FaLocationDot className="text-gray-500" />
                       {exp.location}
                     </p>
                   )}
                 </div>
 
-                {/* Right Column: Details */}
-                <div className="md:flex-1">
-                  <h3 className="text-xl font-bold text-gray-800">
+                {/* Right Column: Position, Company, Summary, Highlights */}
+                <div className="flex-1">
+                  <h6 className="font-semibold text-lg text-gray-800">
                     {exp.url ? (
                       <a
                         href={exp.url}
@@ -90,17 +81,13 @@ const Experience = () => {
                     ) : (
                       exp.position
                     )}
-                  </h3>
-                  <h4 className="text-gray-700 mt-1 font-medium">
-                    {exp.name}
-                  </h4>
-                  {exp.summary && (
-                    <p className="text-gray-600 italic mt-1">{exp.summary}</p>
-                  )}
+                  </h6>
+                  <p className="text-gray-600 italic mb-2">{exp.name}</p>
+                  {exp.summary && <p className="text-gray-700 mb-2">{exp.summary}</p>}
 
                   {/* Highlights */}
-                  {exp.highlights?.length > 0 && (
-                    <ul className="list-disc list-inside mt-3 space-y-1 text-gray-700">
+                  {exp.highlights && exp.highlights.length > 0 && (
+                    <ul className="list-disc list-inside text-gray-700 space-y-1">
                       {exp.highlights.map((item, idx) => (
                         <li key={idx}>{item}</li>
                       ))}
