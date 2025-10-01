@@ -1,0 +1,19 @@
+.navLink {
+   color: #000000; /* black by default */
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.navLink:hover {
+   color: #7cb342; /* green on hover */
+  text-decoration: none; /* optional, remove underline */
+}
+
+.socialIcon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1); /* subtle hover effect */
+}

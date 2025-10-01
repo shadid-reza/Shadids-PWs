@@ -1,55 +1,9 @@
 import React from "react";
+import { newsList } from "../assets/data/news";
 
-// Example news items
-const newsList = [
-  {
-     id: 1,
-    date: "Jan 1, 2020",
-    text: (
-      <>
-        First day of my undergraduate life at {" "} Islamic University of Technology (IUT) in Bangladesh.
-      </>
-    ),
-  },
-  {
-    id: 2,
-    date: "Oct 4, 2020",
-    text: (
-      <>
-        Got Honorable mention as NASA Galactic Problem Solver for performance in{" "}
-         <a
-           href="https://www.spaceappschallenge.org/"
-           target="_blank"
-           rel="noopener noreferrer"
-            >
-           NASA Space Apps Challenge 2020. 
-         </a>
-      </>
-    ),
-  },
-  {
-    id: 3,
-    date: "Jun 8, 2022",
-    text: (
-      <>
-       Won HealthTech Category Award in <a href="https://bcolbd.org/" target="_blank" rel="noopener noreferrer">National Blockchain Olympiad 2022</a> for creating a blockchain based EHR platform.
-      </>
-    ),
-  },
-  {
-    id: 4,
-    date: "Sep 10, 2022",
-    text: (
-        <>
-    Our team became Champion in Dhaka regional round in the <a href="https://iit.du.ac.bd/view_achievements/view_achievements_details/69" target="_blank" rel="noopener noreferrer">Robi BDapps, The National Hackathon 2022</a>.
-          </>
-    ),
-  }
-
-];
 
 const News = () => {
-    const sortedNews = [...newsList].sort((a, b) => b.id - a.id);
+  const sortedNews = [...newsList].sort((a, b) => b.id - a.id);
   return (
     <section id="news" className="max-w-6xl mx-auto px-4 py-8">
       <h3 className="text-2xl font-bold text-gray-900 mb-6">News</h3>

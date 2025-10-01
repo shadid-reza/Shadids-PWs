@@ -1,6 +1,5 @@
 import React from "react";
 import profileImage from "../assets/shadid-light-square.png";
-import "../assets/css/aboutMe.css";
 
 const AboutMe = () => {
   return (
@@ -10,7 +9,7 @@ const AboutMe = () => {
         {/* Name Section */}
         <div className="mb-6 text-center md:text-left">
           <h1 className="text-3xl font-bold text-gray-900">H M Shadid Reza Chowdhury</h1>
-          <p className="text-sm text-gray-600">Full Stack Software Engineer</p>
+          <p className="text-sm text-gray-600">Full Stack Software Engineer | Aspiring PhD Researcher</p>
         </div>
 
         {/* Image + Paragraph */}
@@ -31,16 +30,17 @@ const AboutMe = () => {
 
           {/* Paragraph Content */}
           <div className="md:flex-1">
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed text-justify">
               I’m a Software Engineer with over a year of experience developing scalable web applications at{" "}
-              <a href="https://hawarit.com" target="_blank" rel="noopener noreferrer">HawarIT Limited</a>. I work mostly with ASP .NET Core, DevOps, making systems secure by design. I hold a B.Sc. in <a href="https://cse.iutoic-dhaka.edu/">Computer Science and Engineering</a>{" "}
-              from <a href="https://www.iutoic-dhaka.edu/">Islamic University of Technology (IUT)</a>.
+              <a href="https://hawarit.com" target="_blank" rel="noopener noreferrer">HawarIT Limited</a>. I work mostly with ASP .NET Core, DevOps, making systems secure by design.{" "}
+              I hold a B.Sc. in <a href="https://cse.iutoic-dhaka.edu/" target="_blank" rel="noopener noreferrer">Computer Science and Engineering</a>{" "}
+              from <a href="https://www.iutoic-dhaka.edu/" target="_blank" rel="noopener noreferrer">Islamic University of Technology (IUT)</a>.
             </p>
 
-            <p className="text-lg leading-relaxed mt-4">
+            <p className="text-lg leading-relaxed mt-4 text-justify">
               I’m passionate about computer security, digital forensics, and blockchain.{" "}
-              I love pushing my skills at various cybersecurity workshops and hackathons, and{" "} 
-              one highlight was when me and my team took home the <span className="font-semibold">Bronze Award</span> in the "Good Health and Well Being" category{" "}
+              I love pushing my skills at various cybersecurity workshops and hackathons, and{" "}
+              one highlight was when me and my team took home the <span className="font-semibold">Bronze Award</span> in the <em>SDG-3: Good Health and Well Being</em> category{" "}
               at the <a href="https://www.ibcol.org/" target="_blank" rel="noopener noreferrer">International Blockchain Olympiad (IBCOL 2022)</a>.
             </p>
           </div>
