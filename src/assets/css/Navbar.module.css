@@ -6,8 +6,13 @@
 }
 
 .navLink:hover {
-   color: #7cb342; /* green on hover */
+   color: #628e34; /* green on hover */
   text-decoration: none; /* optional, remove underline */
+}
+
+.active {
+  color: #628e34;    /* active color */
+  font-weight: 600;
 }
 
 .socialIcon {
@@ -16,4 +21,12 @@
 
 .socialIcon:hover {
   transform: scale(1.1); /* subtle hover effect */
+}
+
+.nameLink {
+  color: #1f1f1f; /* your desired black */
+  font-weight: 600;
+  font-size: 1.5rem; /* xl */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }

@@ -68,7 +68,7 @@ export const newsList = [
     date: "Apr 3, 2023",
     text: (
       <>
-        I joined <a href="https://treepp.org/" target="_blank" rel="noopener noreferrer">Tree++</a>, as a volunteer developer{" "}
+        I joined <a href="https://treepp.org/" target="_blank" rel="noopener noreferrer">Tree++</a>, as a volunteer developer intern, {" "}
         where I am helping build their web application. Tree++ is a non-profit startup which enables individuals to measure their carbon footprint and offset it through tree planting.
       </>
     ),
@@ -78,7 +78,7 @@ export const newsList = [
     date: "Jul 1, 2023",
     text: (
       <>
-        Started my first internship as a <em>Blockchain R&D Intern</em> at{" "}
+        As a part of industrial training, I began my second internship as a <em>Blockchain R&D Intern</em> at{" "}
         <a href="https://grameen.technology/" target="_blank" rel="noopener noreferrer">Grameen Communications, Dhaka</a>,{" "}
         where I will be working on a blockchain-based prototype for their banking system software.
       </>

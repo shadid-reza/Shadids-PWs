@@ -1,68 +1,41 @@
 import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
+import { experiences } from "../../assets/data/experiences";
 
-const experiences = [
-  {
-    id: 1,
-    startDate: "2023-01",
-    endDate: "Present",
-    location: "Dhaka, Bangladesh",
-    position: "Software Engineer",
-    name: "TechCorp Solutions",
-    summary: "Building modern web applications and APIs.",
-    url: "https://techcorp.com",
-    highlights: [
-      "Developed scalable REST APIs with .NET and EF Core",
-      "Led migration to Azure cloud environment",
-      "Implemented CI/CD pipelines for automated deployments",
-    ],
-  },
-  {
-    id: 2,
-    startDate: "2021-06",
-    endDate: "2022-12",
-    location: "Remote",
-    position: "Frontend Developer",
-    name: "Creative Labs",
-    summary: "Worked on responsive UI development with React.",
-    url: "https://creativelabs.com",
-    highlights: [
-      "Built reusable React components with Tailwind CSS",
-      "Improved site performance and accessibility",
-      "Collaborated in an agile team across time zones",
-    ],
-  },
-];
-
-const formatDate = (start, end) => {
-  const format = (dateStr) => {
-    if (!dateStr || dateStr === "Present") return "Present";
-    const [year, month] = dateStr.split("-");
-    return `${year}.${month}`;
-  };
-  return `${format(start)} - ${format(end)}`;
+// Date formatter → Jan 2022
+const formatDate = (dateStr) => {
+  if (!dateStr || dateStr === "Present") return "Present";
+  const [year, month] = dateStr.split("-");
+  const months = [
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+  ];
+  return `${months[parseInt(month, 10) - 1]} ${year}`;
 };
 
-const Experience = () => {
+export const Experience = () => {
   return (
-    <section id="experience" className="max-w-6xl mx-auto px-4 py-8">
+    <section id="experience" className="max-w-6xl mx-auto px-4">
       <div className="card bg-white shadow-md rounded-md p-6">
         <h3 className="text-2xl font-bold text-gray-900 mb-6">Experience</h3>
 
         <ul className="space-y-6">
           {experiences.map((exp) => (
-            <li key={exp.id} className="list-group-item border-b last:border-none pb-4">
+            <li
+              key={exp.id}
+              className="list-group-item border-b last:border-none pb-4"
+            >
               <div className="flex flex-col md:flex-row gap-4">
                 {/* Left Column: Date + Location */}
                 <div className="md:w-auto flex-shrink-0">
-                  <span className="inline-block text-center bg-blue-200 text-blue-900 font-semibold text-sm py-1 px-3 rounded uppercase w-[120px]">
-                    {formatDate(exp.startDate, exp.endDate)}
+                  <span className="inline-block text-center bg-green-200 text-green-900 font-semibold text-xs py-1 px-3 rounded uppercase w-[145px]">
+                    {`${formatDate(exp.startDate)} - ${formatDate(exp.endDate)}`}
                   </span>
                   {exp.location && (
-                    <p className="text-gray-600 mt-2 flex items-center gap-1 text-sm">
+                    <p className="text-gray-600 mt-2 flex gap-1 justify-start md:justify-center text-xs">
                       <FaLocationDot className="text-gray-500" />
                       {exp.location}
-                    </p>
+                    </p>       
                   )}
                 </div>
 
@@ -83,9 +56,10 @@ const Experience = () => {
                     )}
                   </h6>
                   <p className="text-gray-600 italic mb-2">{exp.name}</p>
-                  {exp.summary && <p className="text-gray-700 mb-2">{exp.summary}</p>}
+                  {exp.summary && (
+                    <p className="text-gray-700 mb-2">{exp.summary}</p>
+                  )}
 
-                  {/* Highlights */}
                   {exp.highlights && exp.highlights.length > 0 && (
                     <ul className="list-disc list-inside text-gray-700 space-y-1">
                       {exp.highlights.map((item, idx) => (

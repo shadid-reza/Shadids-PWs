@@ -1,7 +1,6 @@
 import React from "react";
 import { newsList } from "../assets/data/news";
 
-
 const News = () => {
   const sortedNews = [...newsList].sort((a, b) => b.id - a.id);
   return (

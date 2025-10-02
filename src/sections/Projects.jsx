@@ -1,38 +1,10 @@
 import React from "react";
-
-import autohubImage from "../assets/projects/autohub-project.png";
-
-const projects = [
-  {
-    id: 1,
-    title: "AUTOHUB by IUT CARBON",
-    importance: 1,
-    description: "A centralized e-commerce platform connecting car owners with workshops for seamless auto repair and service management.",
-    image: autohubImage,
-    url: "https://github.com/shadid-reza/AutoHub_IUT-CARBON",
-  },
-  {
-    id: 2,
-    title: "Portfolio Website",
-    importance: 2,
-    description: "A modern responsive portfolio built with React & Tailwind CSS.",
-    image: "shadids-pws/src/assets/projects/portfolio.png",
-    url: "https://github.com/yourusername/portfolio-website",
-  },
-  {
-    id: 3,
-    title: "Data Dashboard",
-    importance: 3,
-    description: "An interactive analytics dashboard with real-time data.",
-    image: "shadids-pws/src/assets/projects/dashboard.png",
-    url: "https://github.com/yourusername/data-dashboard",
-  },
-];
+import { projects } from "../assets/data/projects";
 
 const Projects = () => {
   return (
-    <section id="projects" className="max-w-6xl mx-auto px-4 py-8">
-      <div className=" p-4 rounded-md">
+    <section id="projects" className="max-w-6xl mx-auto px-4 py-2">
+      <div className="pt-4 rounded-md">
         <h2 className="text-3xl font-bold text-gray-900 mb-6">Projects</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

@@ -1,10 +1,10 @@
 import React from "react";
-import profileImage from "../assets/shadid-light-square.png";
+import profileImage from "../assets/photos/shadid-convo.jpg";
 
 const AboutMe = () => {
   return (
     <section id="about" className="max-w-6xl mx-auto px-4">
-      <div className="p-4 rounded-md">
+      <div className="pt-4 rounded-md">
 
         {/* Name Section */}
         <div className="mb-6 text-center md:text-left">
@@ -13,7 +13,7 @@ const AboutMe = () => {
         </div>
 
         {/* Image + Paragraph */}
-        <div className="md:flex md:items-start md:gap-6">
+        <div className="md:flex md:items-start md:gap-9">
           {/* Profile Image */}
           <img
             src={profileImage}
@@ -21,7 +21,7 @@ const AboutMe = () => {
             className="
           float-right ml-4 mb-4
           w-24 sm:w-32
-          md:float-none md:ml-0 md:mb-0 md:w-46 md:h-46
+          md:float-none md:ml-0 md:mb-0 md:w-48 md:h-48
           md:order-last
           rounded-lg shadow-lg
           transition-all duration-200
@@ -34,7 +34,7 @@ const AboutMe = () => {
               I’m a Software Engineer with over a year of experience developing scalable web applications at{" "}
               <a href="https://hawarit.com" target="_blank" rel="noopener noreferrer">HawarIT Limited</a>. I work mostly with ASP .NET Core, DevOps, making systems secure by design.{" "}
               I hold a B.Sc. in <a href="https://cse.iutoic-dhaka.edu/" target="_blank" rel="noopener noreferrer">Computer Science and Engineering</a>{" "}
-              from <a href="https://www.iutoic-dhaka.edu/" target="_blank" rel="noopener noreferrer">Islamic University of Technology (IUT)</a>.
+              from <a href="https://www.iutoic-dhaka.edu/" target="_blank" rel="noopener noreferrer">Islamic University of Technology (IUT)</a>, Dhaka, Bangladesh.
             </p>
 
             <p className="text-lg leading-relaxed mt-4 text-justify">
