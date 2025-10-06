@@ -26,8 +26,8 @@ export const Education = () => {
                   <h6 className="font-semibold text-lg text-gray-800">
                     {edu.degree}
                   </h6>
-                  <p className="text-gray-600 italic mb-2">{edu.school}</p>
-
+                  <p className="text-gray-600 italic">{edu.school}</p>
+                  <p className="text-gray-600 font-medium italic mb-2">{edu.result}</p>
                 </div>
               </div>
             </li>

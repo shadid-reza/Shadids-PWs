@@ -7,7 +7,7 @@ const Interests = () => {
         <h3 className="text-xl font-semibold mb-4">Other Interests</h3>
         <ul className="list-disc list-inside text-gray-700 space-y-1">
           <li><strong>Sports:</strong> Football, Badminton, Cricket, Table Tennis, Foosball</li>
-          <li><strong>Hobbies:</strong> Video games, PC Building, Tech Podcasts, Traveling</li>
+          <li><strong>Hobbies:</strong> Video games, Sports Analysis, PC Building, Tech Podcasts, Traveling</li>
         </ul>
       </div>
     </section>
