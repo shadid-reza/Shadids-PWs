@@ -1,17 +1,17 @@
 .navLink {
-   color: #000000; /* black by default */
+   color: #1f1f1f;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 .navLink:hover {
-   color: #628e34; /* green on hover */
-  text-decoration: none; /* optional, remove underline */
+   color: #628e34; 
+  text-decoration: none;
 }
 
 .active {
-  color: #628e34;    /* active color */
+  color: #628e34;    
   font-weight: 600;
 }
 
@@ -20,13 +20,13 @@
 }
 
 .socialIcon:hover {
-  transform: scale(1.1); /* subtle hover effect */
+  transform: scale(1.1); 
 }
 
 .nameLink {
-  color: #1f1f1f; /* your desired black */
+  color: #1f1f1f; 
   font-weight: 600;
   font-size: 1.5rem; /* xl */
-  text-decoration: none;
+  text-decoration: none !important;
   transition: color 0.2s ease-in-out;
 }

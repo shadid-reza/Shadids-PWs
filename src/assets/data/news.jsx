@@ -162,7 +162,7 @@ export const newsList = [
     date: "Aug 3, 2025",
     text: (
       <>
-        I took the IELTS exam and achieved an overall band score of 7.5, with individual scores of Listening 8.5, Reading 8.0, Writing 6.0, and Speaking 6.5.
+        I took the IELTS test and achieved an overall band score of 7.5.
       </>
     ),
   }

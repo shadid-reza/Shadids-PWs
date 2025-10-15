@@ -41,13 +41,13 @@
 }
 
 a {
-  color: #628e34; /* green by default */
+  color: #5a8829; 
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 a:hover {
-  color: #4FB7B3; /* optional hover effect */
-  text-decoration: none;
+  color: #81926e; 
+  text-decoration: underline;
 }

@@ -16,7 +16,7 @@ const Projects = () => {
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition hover:-translate-y-1 duration-200"
+                className="block bg-white rounded-lg shadow-md overflow-hidden !no-underline hover:shadow-lg transition hover:-translate-y-1 duration-200"
               >
                 <img
                   src={project.image}

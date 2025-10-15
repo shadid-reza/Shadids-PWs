@@ -7,7 +7,7 @@ export const educationList = [
   },
   {
     year: "2017 - 2019",
-    degree: "Higher Secondary School Certificate,",
+    degree: "Higher Secondary School Certificate",
     school: "Rajuk Uttara Model College, Dhaka, Bangladesh",
   },
 ];

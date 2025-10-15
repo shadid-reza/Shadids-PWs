@@ -38,7 +38,7 @@ const AboutMe = () => {
             </p>
 
             <p className="text-lg leading-relaxed mt-4 text-justify">
-              I’m passionate about computer security, digital forensics, and blockchain.{" "}
+              My research interests include <span className="font-semibold">computer security, digital forensics, system security, usable security, and blockchain</span>.{" "}
               I love pushing my skills at various cybersecurity workshops and hackathons, and{" "}
               one highlight was when me and my team took home the <span className="font-semibold">Bronze Award</span> in the <em>SDG-3: Good Health and Well Being</em> category{" "}
               at the <a href="https://www.ibcol.org/" target="_blank" rel="noopener noreferrer">International Blockchain Olympiad (IBCOL 2022)</a>.
